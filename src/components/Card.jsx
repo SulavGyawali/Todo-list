@@ -185,7 +185,9 @@ const Card = () => {
             className="w-2 h-2 rounded-full appearance-none bg-violet-500 checked:bg-violet-700 checked:ring-2 checked:ring-offset-2 checked:ring-violet-700 cursor-pointer"
             onClick={handleShowFinished}
           />
-          <span>Show Finished</span>
+          <span className={`${showFinished? "text-black":
+            "text-gray-500"
+          }`}>Show Finished</span>
         </label>
         <div className="separation bg-gray-300 w-[80%] h-0.5 mx-auto mt-4"></div>
         <div className="todo mt-2 ml-7 font-bold text-2xl">Your Todos</div>
